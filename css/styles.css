@@ -524,6 +524,7 @@ margin-left: 80px;
 
 .footer-form {
 display: flex;
+gap: 24px;
 }
 
 .footer-form-input {
@@ -554,7 +555,7 @@ display: flex;
 border-color: #4D5AE5;
 }
 .footer-form-btn {
-    max-width: 165px;
+    width: 165px;
     height: 40px;
     display: inline-flex;
     padding: 8px 24px;
@@ -570,6 +571,7 @@ border-color: #4D5AE5;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    border: none;
 
 }
 
@@ -612,6 +614,7 @@ border-color: #4D5AE5;
     display: grid;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 16px;
 }
 
 .modal-btn {
@@ -640,13 +643,14 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .modal-btn:hover,
 .modal-btn:focus {
-fill: #ffffff
+fill: #ffffff;
 background-color: var(--OCEAN, #404BBF);
 border: none;
 }
 .modal-btn .modal-btn-icon:hover,
 .modal-btn .modal-btn-icon:focus {
 fill: #FFFFFF;
+background-color: #404bbf;
 }
 
 
@@ -769,7 +773,6 @@ letter-spacing: 0.04em;
     letter-spacing: 0.04em;
 }
 .check-text {
-
     display: inline-flex;
     align-items: center;
     position: relative;
@@ -777,6 +780,7 @@ letter-spacing: 0.04em;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .check-text a {
@@ -786,7 +790,7 @@ text-decoration-line: underline;
 }
 
 .check-text-box {
-display: inline-flex;
+    /* display: block; */
     width: 16px;
     height: 16px;
     border-radius: 2px;
@@ -804,7 +808,7 @@ display: inline-flex;
 .modal-check:checked + 
 .check-text > .check-text-box {
     background-color: var(--OCEAN, #404BBF);
-   /* fill: var #F4F4FD;*/
+    fill: var #F4F4FD;
     border: none;
 }
 
