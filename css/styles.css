@@ -692,11 +692,12 @@ background-color: (--IRIS, #4D5AE5);
 }
 */
 .modal-form-btn {
-    display: inline-flex;
+    display: block;
     padding: 16px 32px;
     align-items: flex-start;
     gap: 10px;
-    width: 105px;
+    min-width: 169px;
+    cursor: pointer;
     color: var(--WHITE, #FFF);
     text-align: center;
     font-size: 16px;
@@ -708,7 +709,9 @@ background-color: (--IRIS, #4D5AE5);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none; 
     margin-left: 119px;
+    margin-right: 120px;
     margin-top: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-label {
     display: block;
@@ -747,7 +750,7 @@ outline: transparent;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 resize: none;
 font-size: 12px;
-line-height: 1.16;
+line-height: 1.17;
 letter-spacing: 0.04em;
 }
 
@@ -755,7 +758,7 @@ letter-spacing: 0.04em;
     color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
     font-size: 12px;
     font-style: normal;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.04em;
 }
 .check-text {
@@ -765,7 +768,7 @@ letter-spacing: 0.04em;
     position: relative;
     color: var(--LIGHT-SLATE, #8E8F99);
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.04em;
 }
 
