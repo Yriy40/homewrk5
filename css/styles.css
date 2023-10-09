@@ -649,7 +649,7 @@ border: none;
 }
 .modal-btn .modal-btn-icon:hover,
 .modal-btn .modal-btn-icon:focus {
-fill: #ffffff
+fill: #ffffff;
 background-color: #404bbf;
 }
 
