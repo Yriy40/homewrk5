@@ -408,13 +408,29 @@ We bring forth a deep passion for problem-solving.
                     </li>
                 </ul>
             </div>
+            <div class="footer-bottom">
+                <p class="text-subscribe">Subscribe</p>
+        <form class="footer-form">
+            <input
+            class="footer-form-input"
+            type="email"
+            name="footer-email"
+            placeholder="E-mail"
+            />
+            <button type="submit" class="footer-form-btn">Subscribe
+            <svg class="footer-team-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-Frame"></use>
+                        </svg>    
+            </button>
+        </form>
+        </div>
 </div>
 </footer>
-<div class="backdrop is-open">
+<div class="backdrop ">
     <div class="modal">
         <button class="modal-btn" type="button">
-            <svg class="modal-btn-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-close-1"></use>
+            <svg class="modal-btn-icon" width="8" height="8">
+                <use href="./images/icons.svg#icon-Vector-1-1"></use>
             </svg>
         </button>
     <p class="modal-title">Leave your contacts and we will call you back</p>
@@ -469,22 +485,21 @@ We bring forth a deep passion for problem-solving.
     placeholder="Text input"
     ></textarea>
 </div>
-<div class="modal-field">
+<div class="modal-field-check">
             <input
-            class="modal-check "
+            class="modal-check visually-hidden"
             type="checkbox"
-            name="terms"
-            id="terms"
-            required
+            name="user-privacy"
+            id="user-privacy"
+            value="user-privacy"
             />
-            <label class="check-text" for="terms">
-            <span class="check-text">
-            <svg class="check-text-box" width="16" height="16">
-            <use href="./images/icons.svg#icon-Property-1click-1"></use>
+            <label class="check-text" for="user-privacy">
+            <span class="check-text-box">
+            <svg class="check-text-icon" width="16" height="16">
+            <use href="./images/icons.svg#icon-Property-1click-2"></use>
             </svg>
-            </span>
-            I accept the terms and conditions of the 
-            <a href=""> Privacy Policy</a></label
+            </span>I accept the terms and conditions of the
+            <a href="">&#160;Privacy Policy</a></label
             >
         </div>
         <button type="submit" class="modal-form-btn">Send</button>
