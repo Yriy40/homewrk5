@@ -757,7 +757,6 @@ background-color: transparent;
 padding: 8px 16px;
 color: rgba(46, 47, 66, 0.4);;
 outline: transparent;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 resize: none;
 font-size: 12px;
 line-height: 1.17;
@@ -780,7 +779,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-style: normal;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .modal-field-check{
     display: flex;
