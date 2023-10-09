@@ -552,7 +552,7 @@ display: flex;
 border-color: #4D5AE5;
 }
 .footer-form-btn {
-    width: 165px;
+    max-width: 165px;
     height: 40px;
     display: inline-flex;
     padding: 8px 24px;
@@ -567,9 +567,13 @@ border-color: #4D5AE5;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    cursor: pointer;
+
 }
 
-.footer-team-icon {}
+.footer-team-icon {
+    margin-left: 16px;
+}
 
 
 
@@ -590,8 +594,7 @@ border-color: #4D5AE5;
     opacity: 0;
     visibility: hidden; 
     pointer-events: none;
-    transition: opacity 300ms linear, visibility 300ms linear;
-    
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -599,16 +602,13 @@ border-color: #4D5AE5;
     min-height: 584px;
     border-radius: 4px;
     z-index: 1;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     background: var(--DAIRY, #FCFCFC);
     position: absolute;
     top: 50%;left: 50%;
     transform: translate(-50%, -50%);
-    padding-top: 74px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 24px;
+    padding: 72px 24px 24px 24px;
     display: grid;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn {
@@ -617,7 +617,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 background-color: #E7E9FC;
-border: 1px #0000001A;
+border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 50%;
 cursor: pointer;
 top: 24px;
@@ -625,8 +625,9 @@ right: 24px;
 width: 24px;
 height: 24px;
 padding: 0;
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+/*transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 border 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+*/
 }
 
 .modal-btn .modal-btn-icon {
@@ -652,6 +653,7 @@ color: var(--NAVY-BLUE, #2E2F42);
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 16px;
 }
 .modal-field {
 margin-bottom: 8px;
@@ -665,7 +667,7 @@ margin-bottom: 8px;
     flex-direction: column;
     align-items: flex-start;
     border-radius: 4px;
-    border: 1px solid rgba(17, 17, 17, 0.25);
+    border: 1px solid rgba(46, 47, 66, 0.4);
     background-color: transparent;
     padding-left: 38px;
     padding-right: 24px;
@@ -673,7 +675,7 @@ margin-bottom: 8px;
     color: #2E2F4266;
     font-size: 16px;
     outline: transparent;
-    transition: border-color 250ms ;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-wrap:focus-within .modal-input {
 border: 1px solid var(--IRIS, #4D5AE5);
@@ -713,7 +715,7 @@ background-color: (--IRIS, #4D5AE5);
     color: var(--LIGHT-SLATE, #8E8F99);
     width: 58px;
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     margin-bottom: 4px;
 }
@@ -731,7 +733,7 @@ position: relative;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
-    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-textarea {
 width: 100%;
