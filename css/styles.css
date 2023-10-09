@@ -649,7 +649,7 @@ border: none;
 }
 .modal-btn .modal-btn-icon:hover,
 .modal-btn .modal-btn-icon:focus {
-
+fill: #ffffff
 background-color: #404bbf;
 }
 
@@ -768,7 +768,7 @@ letter-spacing: 0.04em;
     margin-bottom: 16px;
 }
 .modal-comment:focus-within .modal-textarea {
-    border: 1px solid var(--IRIS, #4D5AE5);
+border: 1px solid var(--IRIS, #4D5AE5);
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -781,7 +781,6 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-style: normal;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-field-check{
     display: flex;
@@ -805,7 +804,6 @@ text-decoration-line: underline;
 }
 
 .check-text-box {
-    display: inline-flex; 
     width: 16px;
     height: 16px;
     border-radius: 2px;
