@@ -767,6 +767,13 @@ letter-spacing: 0.04em;
 .modal-comment {
     margin-bottom: 16px;
 }
+.modal-comment:focus-within .modal-textarea {
+    border: 1px solid var(--IRIS, #4D5AE5);
+}
+
+
+
+
 .modal-textarea::placeholder {
     color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
     font-size: 12px;
@@ -776,6 +783,8 @@ letter-spacing: 0.04em;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-field-check{
+    display: flex;
+    align-items: center;
     margin-bottom: 24px;
 }
 .check-text {
@@ -813,7 +822,7 @@ text-decoration-line: underline;
 .modal-check:checked + 
 .check-text > .check-text-box {
     background-color: var(--OCEAN, #404BBF);
-    fill: var(--OCEAN, #404BBF);
+    fill: #f4f4fd;
     border: none;
 }
 
