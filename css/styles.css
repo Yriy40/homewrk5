@@ -780,6 +780,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-style: normal;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-field-check{
     display: flex;
